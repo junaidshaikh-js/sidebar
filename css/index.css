@@ -1,1 +1,129 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f1f5f8;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  color: #49a6e9;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.3);
+}
+
+.sidebar {
+  height: 100vh;
+  overflow: hidden;
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #fff;
+  transition: trasform 0.4;
+  transform: translateX(-100%);
+  z-index: 99;
+}
+
+.sidebar__header {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__header button {
+  color: red;
+  font-size: 2rem;
+}
+
+.sidebar__header button:hover {
+  animation: rotate 0.3s ease-in-out;
+}
+
+.sidebar .nav-links {
+  margin-top: 2rem;
+}
+
+.sidebar .nav-links li {
+  font-size: 1.5rem;
+}
+
+.sidebar .nav-links li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  color: #617d98;
+  text-decoration: none;
+  transition: padding 0.3s;
+}
+
+.sidebar .nav-links li a:hover {
+  color: #49a6e9;
+  background-color: #0f3b8d;
+  padding-left: 2.5rem;
+}
+
+.sidebar .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.sidebar .social-links__icons {
+  display: flex;
+}
+
+.sidebar .social-links__icons li {
+  padding: 1rem;
+}
+
+.sidebar .social-links__icons li a {
+  color: #49a6e9;
+  font-size: 1.5rem;
+}
+
+.sidebar .social-links__icons li a:hover {
+  color: blue;
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sidebar {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
