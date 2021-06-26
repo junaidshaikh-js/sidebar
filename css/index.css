@@ -18,6 +18,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  background: transparent;
 }
 
 ul {
@@ -39,12 +40,13 @@ ul {
 
 .sidebar {
   height: 100vh;
+  max-width: 400px;
   overflow: hidden;
   padding: 1rem 0;
   display: flex;
   flex-flow: column nowrap;
   background-color: #fff;
-  transition: trasform 0.4;
+  transition: transform 0.4s ease-out;
   transform: translateX(-100%);
   z-index: 99;
 }
@@ -59,10 +61,11 @@ ul {
 .sidebar__header button {
   color: red;
   font-size: 2rem;
+  animation: rotate-out 0.3s ease-in;
 }
 
 .sidebar__header button:hover {
-  animation: rotate 0.3s ease-in-out;
+  animation: rotate-in 0.3s ease-out;
 }
 
 .sidebar .nav-links {
@@ -115,15 +118,21 @@ ul {
   transform: translateX(0);
 }
 
-@keyframes rotate {
+@keyframes rotate-in {
+  from {
+    transform: rotate(0);
+  }
   to {
     transform: rotate(360deg);
   }
 }
 
-@media screen and (min-width: 600px) {
-  .sidebar {
-    width: 400px;
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -19,6 +19,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  background: transparent;
 }
 
 ul {
@@ -45,12 +46,13 @@ $background-color-body: hsl(210, 36%, 96%);
 // sidebar
 .sidebar {
   height: 100vh;
+  max-width: 400px;
   overflow: hidden;
   padding: 1rem 0;
   display: flex;
   flex-flow: column nowrap;
   background-color: #fff;
-  transition: trasform 0.4;
+  transition: transform 0.4s ease-out;
   transform: translateX(-100%);
   z-index: 99;
 
@@ -63,9 +65,10 @@ $background-color-body: hsl(210, 36%, 96%);
     button {
       color: red;
       font-size: 2rem;
+      animation: rotate-out 0.3s ease-in;
 
       &:hover {
-        animation: rotate 0.3s ease-in-out;
+        animation: rotate-in 0.3s ease-out;
       }
     }
   }
@@ -120,15 +123,23 @@ $background-color-body: hsl(210, 36%, 96%);
 .show-menu {
   transform: translateX(0);
 }
+
 // rotate cancle menu button
-@keyframes rotate {
+@keyframes rotate-in {
+  from {
+    transform: rotate(0);
+  }
   to {
     transform: rotate(360deg);
   }
 }
 
-@media screen and (min-width: 600px) {
-  .sidebar {
-    width: 400px;
+// reverse the rotation
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
   }
 }
