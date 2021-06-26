@@ -46,7 +46,6 @@ $background-color-body: hsl(210, 36%, 96%);
 // sidebar
 .sidebar {
   height: 100vh;
-  max-width: 400px;
   overflow: hidden;
   padding: 1rem 0;
   display: flex;
@@ -141,5 +140,11 @@ $background-color-body: hsl(210, 36%, 96%);
   }
   to {
     transform: rotate(0);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sidebar {
+    width: 400px;
   }
 }

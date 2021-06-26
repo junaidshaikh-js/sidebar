@@ -40,7 +40,6 @@ ul {
 
 .sidebar {
   height: 100vh;
-  max-width: 400px;
   overflow: hidden;
   padding: 1rem 0;
   display: flex;
@@ -133,6 +132,12 @@ ul {
   }
   to {
     transform: rotate(0);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .sidebar {
+    width: 400px;
   }
 }
 /*# sourceMappingURL=index.css.map */
