@@ -9,7 +9,6 @@ This project is a part of 15 vanilla JavaScript projects.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-- [Other Projects](#other-projects)
 - [Author](#author)
 
 ## Overview
@@ -30,38 +29,6 @@ This project is a part of 15 vanilla JavaScript projects.
 - [Sass](https://sass-lang.com/) - CSS extension language
 - CSS Flexbox
 - JavaScript
-
-## Other Projects
-
-1. Counter
-
-- [view](https://junaidshaikh-js.github.io/counter/)
-- [Github](https://github.com/junaidshaikh-js/counter)
-
-2. Color Flipper
-
-- [view](https://junaidshaikh-js.github.io/color-flipper/)
-- [Github](https://github.com/junaidshaikh-js/color-flipper)
-
-3. Reviews
-
-- [view](https://junaidshaikh-js.github.io/reviews/)
-- [Github](https://github.com/junaidshaikh-js/reviews)
-
-4. Navbar
-
-- [View](https://junaidshaikh-js.github.io/navbar/)
-- [Github](https://github.com/junaidshaikh-js/navbar)
-
-5. modal
-
-- [View](https://junaidshaikh-js.github.io/modal/)
-- [Github](https://github.com/junaidshaikh-js/modal)
-
-6. FAQ Questions
-
-- [view](https://junaidshaikh-js.github.io/faq-questions/)
-- [Github](https://github.com/junaidshaikh-js/faq-questions)
 
 ## Author
 
